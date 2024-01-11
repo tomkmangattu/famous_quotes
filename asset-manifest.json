@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/famous_quotes/static/css/main.f855e6bc.css",
-    "main.js": "/famous_quotes/static/js/main.a8562c69.js",
+    "main.js": "/famous_quotes/static/js/main.f3927b72.js",
     "static/js/787.6e1721e9.chunk.js": "/famous_quotes/static/js/787.6e1721e9.chunk.js",
     "static/media/fantasy deer.jpg": "/famous_quotes/static/media/fantasy deer.519b44f043da7e2a2e06.jpg",
     "index.html": "/famous_quotes/index.html",
     "main.f855e6bc.css.map": "/famous_quotes/static/css/main.f855e6bc.css.map",
-    "main.a8562c69.js.map": "/famous_quotes/static/js/main.a8562c69.js.map",
+    "main.f3927b72.js.map": "/famous_quotes/static/js/main.f3927b72.js.map",
     "787.6e1721e9.chunk.js.map": "/famous_quotes/static/js/787.6e1721e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.a8562c69.js"
+    "static/js/main.f3927b72.js"
   ]
 }
