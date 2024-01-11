@@ -1,9 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import fantasyDeer from '../assets/fantasy deer.jpg'
 import RoundButton from './RoundButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function ImageContainer() {
+export default function ImageContainer() { 
+
+
+    const [message, changeMsg] = useState({
+        content: "",
+        auther: ""
+    })
+
+    function renderMessage (json) {
+        changeMsg({
+            content: json[0].content,
+            auther: json[0].author,
+        })
+    }
+
+    useEffect(() => {
+        fetch('https://api.quotable.io/quotes/random?limit=1')
+        .then(response => response.json())
+        .then(json => renderMessage(json))
+    }, [])
+
     return (
         <div style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
             <img
@@ -28,7 +48,8 @@ export default function ImageContainer() {
                 }}>
                     <h2 style={{
                         fontStyle: 'italic',
-                    }}>“We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein</h2>
+                    }}>"{message.content}"</h2>
+                    <h2>- {message.auther}</h2>
                 </div>
                 <div style={{
                      display: "flex",
